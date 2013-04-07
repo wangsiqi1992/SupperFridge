@@ -1,0 +1,21 @@
+
+UINavigationBar
+{
+    backgroundImage: "ipad-menubar-right.png";
+}
+
+UITableView
+{
+    backgroundView: "ipad-BG.png";
+}
+
+SCPullToRefreshView
+{
+    backgroundColor: "leather-background.png";
+}
+
+SCTableViewCell
+{
+    backgroundView: "list-item.png";
+    selectedBackgroundView: "ipad-menu-item-selected.png";
+}
