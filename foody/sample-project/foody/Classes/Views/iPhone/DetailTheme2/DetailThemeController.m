@@ -13,7 +13,6 @@
 @synthesize tableSteps;
 @synthesize scrollView, dishImage, ingredientsTextView, recipe;
 @synthesize btnAction;
-@synthesize food;
 
 #pragma mark - View lifecycle
 
@@ -25,35 +24,28 @@
     
     UIBarButtonItem* editButton = [[UIBarButtonItem alloc] initWithTitle:@"Edit" style:UIBarButtonItemStyleBordered target:nil action:nil];
     
-    
     [self.navigationItem setRightBarButtonItem:editButton];
     
     
     [dishImage setImage:recipe.image];
     
-    if (!food) {
-        NSString* ingredients = @"";
-        for (NSString* ingredient in recipe.ingredients) {
-            ingredients = [NSString stringWithFormat:@"%@ \n %@", ingredients, ingredient];
-        }
-        
-        [ingredientsTextView setText:ingredients];
-        
-        self.btnAction = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btnAction setBackgroundImage:[UIImage imageNamed:@"button.png"]
-                             forState:UIControlStateNormal];
-        [btnAction addTarget:self
-                      action:@selector(pressedButton:)
-            forControlEvents:UIControlEventTouchDown];
-        [btnAction setTitle:@"Press me!" forState:UIControlStateNormal];
-        btnAction.frame = CGRectMake(0, 0, 200, 40.0);
-        btnAction.center = self.scrollView.center;
-        [self.scrollView addSubview:btnAction];
+    NSString* ingredients = @"";
+    for (NSString* ingredient in recipe.ingredients) {
+        ingredients = [NSString stringWithFormat:@"%@ \n %@", ingredients, ingredient];
     }
-    else
-    {
-        [ingredientsTextView setText:@"B"]; 
-    }
+    
+    [ingredientsTextView setText:ingredients];
+    
+    self.btnAction = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnAction setBackgroundImage:[UIImage imageNamed:@"button.png"]
+                         forState:UIControlStateNormal];
+    [btnAction addTarget:self
+               action:@selector(pressedButton:)
+     forControlEvents:UIControlEventTouchDown];
+    [btnAction setTitle:@"Press me!" forState:UIControlStateNormal];
+    btnAction.frame = CGRectMake(0, 0, 200, 40.0);
+    btnAction.center = self.scrollView.center;
+    [self.scrollView addSubview:btnAction];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

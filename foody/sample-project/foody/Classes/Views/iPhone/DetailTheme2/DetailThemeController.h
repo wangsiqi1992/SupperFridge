@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "Recipe.h"
-#import "FoodItem.h"
 
 @interface DetailThemeController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
@@ -17,9 +16,7 @@
 @property (nonatomic, strong) IBOutlet UITextView* ingredientsTextView;
 @property (strong, nonatomic) IBOutlet UITableView *tableSteps;
 @property (strong, nonatomic) UIButton *btnAction;
-@property ( nonatomic) BOOL  food;
 
 @property (nonatomic, strong) Recipe* recipe;
-@property (nonatomic, strong) FoodItem* theFood;
 
 @end

@@ -131,6 +131,17 @@
 		FAB9ABE217116F3200463DFA /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABE117116F3200463DFA /* calendar@2x.png */; };
 		FAB9ABE5171183B700463DFA /* FridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB9ABE4171183B700463DFA /* FridgeViewController.m */; };
 		FAB9ABE817118FFF00463DFA /* salmon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABE717118FFF00463DFA /* salmon.jpg */; };
+		FAB9ABEB1711B0C200463DFA /* foodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB9ABEA1711B0C200463DFA /* foodCell.m */; };
+		FAB9ABED1711B49000463DFA /* SFBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABEC1711B49000463DFA /* SFBackground.png */; };
+		FAB9ABEF1711BC5B00463DFA /* prawn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABEE1711BC5B00463DFA /* prawn.jpg */; };
+		FAB9ABF11711BDE100463DFA /* milk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABF01711BDE100463DFA /* milk.jpg */; };
+		FAB9ABF31711BE0D00463DFA /* noodle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABF21711BE0D00463DFA /* noodle.jpg */; };
+		FAB9ABFA1711BEBD00463DFA /* beef.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABF41711BEBC00463DFA /* beef.jpg */; };
+		FAB9ABFB1711BEBD00463DFA /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABF51711BEBC00463DFA /* apple.jpg */; };
+		FAB9ABFC1711BEBD00463DFA /* broccoli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABF61711BEBD00463DFA /* broccoli.jpg */; };
+		FAB9ABFD1711BEBD00463DFA /* chips.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABF71711BEBD00463DFA /* chips.jpg */; };
+		FAB9ABFE1711BEBD00463DFA /* yogurt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABF81711BEBD00463DFA /* yogurt.jpg */; };
+		FAB9ABFF1711BEBD00463DFA /* eggs.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FAB9ABF91711BEBD00463DFA /* eggs.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -281,6 +292,18 @@
 		FAB9ABE3171183B700463DFA /* FridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FridgeViewController.h; path = ../../../FridgeViewController.h; sourceTree = "<group>"; };
 		FAB9ABE4171183B700463DFA /* FridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FridgeViewController.m; path = ../../../FridgeViewController.m; sourceTree = "<group>"; };
 		FAB9ABE717118FFF00463DFA /* salmon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salmon.jpg; sourceTree = "<group>"; };
+		FAB9ABE91711B0C200463DFA /* foodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = foodCell.h; path = ../../foodCell.h; sourceTree = "<group>"; };
+		FAB9ABEA1711B0C200463DFA /* foodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = foodCell.m; path = ../../foodCell.m; sourceTree = "<group>"; };
+		FAB9ABEC1711B49000463DFA /* SFBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SFBackground.png; sourceTree = "<group>"; };
+		FAB9ABEE1711BC5B00463DFA /* prawn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prawn.jpg; sourceTree = "<group>"; };
+		FAB9ABF01711BDE100463DFA /* milk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = milk.jpg; sourceTree = "<group>"; };
+		FAB9ABF21711BE0D00463DFA /* noodle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noodle.jpg; sourceTree = "<group>"; };
+		FAB9ABF41711BEBC00463DFA /* beef.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beef.jpg; sourceTree = "<group>"; };
+		FAB9ABF51711BEBC00463DFA /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+		FAB9ABF61711BEBD00463DFA /* broccoli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = broccoli.jpg; sourceTree = "<group>"; };
+		FAB9ABF71711BEBD00463DFA /* chips.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chips.jpg; sourceTree = "<group>"; };
+		FAB9ABF81711BEBD00463DFA /* yogurt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yogurt.jpg; sourceTree = "<group>"; };
+		FAB9ABF91711BEBD00463DFA /* eggs.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eggs.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +407,8 @@
 		7F8ECE901612408100F1807C /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				FAB9ABE91711B0C200463DFA /* foodCell.h */,
+				FAB9ABEA1711B0C200463DFA /* foodCell.m */,
 				7F8ECE911612408100F1807C /* IngredientsCell */,
 				7F8ECE941612408100F1807C /* MasterCell */,
 				7F8ECE971612408100F1807C /* StepCell */,
@@ -596,6 +621,16 @@
 		ECDDBE0F14BB003E0007262C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FAB9ABF21711BE0D00463DFA /* noodle.jpg */,
+				FAB9ABF41711BEBC00463DFA /* beef.jpg */,
+				FAB9ABF51711BEBC00463DFA /* apple.jpg */,
+				FAB9ABF61711BEBD00463DFA /* broccoli.jpg */,
+				FAB9ABF71711BEBD00463DFA /* chips.jpg */,
+				FAB9ABF81711BEBD00463DFA /* yogurt.jpg */,
+				FAB9ABF91711BEBD00463DFA /* eggs.JPG */,
+				FAB9ABEE1711BC5B00463DFA /* prawn.jpg */,
+				FAB9ABF01711BDE100463DFA /* milk.jpg */,
+				FAB9ABEC1711B49000463DFA /* SFBackground.png */,
 				FAB9ABE717118FFF00463DFA /* salmon.jpg */,
 				FAB9ABDF17116F1800463DFA /* calendar.png */,
 				FAB9ABE117116F3200463DFA /* calendar@2x.png */,
@@ -864,6 +899,16 @@
 				FAB9ABE017116F1900463DFA /* calendar.png in Resources */,
 				FAB9ABE217116F3200463DFA /* calendar@2x.png in Resources */,
 				FAB9ABE817118FFF00463DFA /* salmon.jpg in Resources */,
+				FAB9ABED1711B49000463DFA /* SFBackground.png in Resources */,
+				FAB9ABEF1711BC5B00463DFA /* prawn.jpg in Resources */,
+				FAB9ABF11711BDE100463DFA /* milk.jpg in Resources */,
+				FAB9ABF31711BE0D00463DFA /* noodle.jpg in Resources */,
+				FAB9ABFA1711BEBD00463DFA /* beef.jpg in Resources */,
+				FAB9ABFB1711BEBD00463DFA /* apple.jpg in Resources */,
+				FAB9ABFC1711BEBD00463DFA /* broccoli.jpg in Resources */,
+				FAB9ABFD1711BEBD00463DFA /* chips.jpg in Resources */,
+				FAB9ABFE1711BEBD00463DFA /* yogurt.jpg in Resources */,
+				FAB9ABFF1711BEBD00463DFA /* eggs.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +940,7 @@
 				7F5057EC1614D82E006E4BBF /* UINavigationBar+CustomImage.m in Sources */,
 				FAB9ABDD1710CB5900463DFA /* FoodItem.m in Sources */,
 				FAB9ABE5171183B700463DFA /* FridgeViewController.m in Sources */,
+				FAB9ABEB1711B0C200463DFA /* foodCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

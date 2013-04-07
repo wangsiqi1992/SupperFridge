@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "foodCell.h"
+#import "DataLoader.h"
 
-@interface FridgeViewController : UICollectionViewController
+
+@interface FridgeViewController : UICollectionViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+{
+    NSArray *foodList;
+}
 
 @end

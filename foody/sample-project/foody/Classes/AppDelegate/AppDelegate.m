@@ -26,6 +26,12 @@
         [self iPhoneInit];
     }
     
+    UILocalNotification *localNotif =
+    [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (localNotif) {
+        application.applicationIconBadgeNumber = 0;
+    }
+    
     return YES;
 }
 	

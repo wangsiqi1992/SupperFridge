@@ -13,4 +13,5 @@
 
 +(NSArray*)loadSampleRecipes;
 +(NSArray*)loadFoodList;
++(NSArray*)loadInitFoods;
 @end

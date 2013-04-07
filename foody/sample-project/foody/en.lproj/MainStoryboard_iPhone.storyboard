@@ -245,16 +245,27 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="SFBackground.png" id="e5B-t6-kMg">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zvg-aE-8nl">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="foodCell" id="Zvg-aE-8nl" customClass="foodCell">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="RaV-5K-IfM">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
+                                    <outlet property="im" destination="RaV-5K-IfM" id="9bk-fc-gxJ"/>
                                     <segue destination="BP7-7A-hVC" kind="push" id="UlO-59-z76"/>
                                 </connections>
                             </collectionViewCell>
@@ -636,6 +647,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SFBackground.png" width="640" height="960"/>
         <image name="calendar.png" width="32" height="32"/>
         <image name="country.png" width="75" height="18"/>
         <image name="details-photo-mask.png" width="297" height="199"/>

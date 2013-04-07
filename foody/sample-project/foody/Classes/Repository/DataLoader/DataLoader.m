@@ -80,7 +80,7 @@
     FoodItem *food4 = [[FoodItem alloc] initWithName:@"Eggs" time:@"May 10" andCountry:@"10" andImage:[UIImage imageNamed:@"eggs.jpg"]];
     FoodItem *food5 = [[FoodItem alloc] initWithName:@"Apple" time:@"Apir 10" andCountry:@"5" andImage:[UIImage imageNamed:@"apple.jpg"]];
     FoodItem *food6 = [[FoodItem alloc] initWithName:@"noodle" time:@"Dec 30" andCountry:@"1" andImage:[UIImage imageNamed:@"noodle.jpg"]];
-    FoodItem *food7 = [[FoodItem alloc] initWithName:@"Brocoli" time:@"Apir 11" andCountry:@"1" andImage:[UIImage imageNamed:@"brocoli.jpg"]];
+    FoodItem *food7 = [[FoodItem alloc] initWithName:@"Broccoli" time:@"Apir 11" andCountry:@"1" andImage:[UIImage imageNamed:@"broccoli.jpg"]];
     FoodItem *food8 = [[FoodItem alloc] initWithName:@"Yogurt" time:@"Apir 25" andCountry:@"5" andImage:[UIImage imageNamed:@"yogurt.jpg"]];
     FoodItem *food9 = [[FoodItem alloc] initWithName:@"Chips" time:@"Dec 30" andCountry:@"2" andImage:[UIImage imageNamed:@"chips.jpg"]];
     
@@ -89,7 +89,16 @@
     
 }
 
++(NSArray*)loadInitFoods
+{
+    FoodItem *food1 = [[FoodItem alloc] initWithName:@"Salmon" time:@"Apir 07" andCountry:@"1" andImage:[UIImage imageNamed:@"salmon.jpg"]];
+    FoodItem *food2 = [[FoodItem alloc] initWithName:@"Prawn" time:@"Apir 08" andCountry:@"1" andImage:[UIImage imageNamed:@"prawn.jpg"]];
+    FoodItem *food3 = [[FoodItem alloc] initWithName:@"Milk" time:@"Apir 15" andCountry:@"1" andImage:[UIImage imageNamed:@"milk.jpg"]];
 
+    
+    NSArray *foods = @[food3,food2,food1];
+    return foods;
+}
 
 
 
